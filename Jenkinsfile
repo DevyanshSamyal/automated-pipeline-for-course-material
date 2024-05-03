@@ -14,11 +14,10 @@ pipeline {
         stage('Installing packages') {
             steps {
                 script {
-                    // Create a virtual environment
-                    sh 'python3 -m venv venv'
+                  
                     
                     // Install required python packages within the virtual environment
-                    sh './venv/bin/pip install -r requirements.txt'
+                    sh 'pip install -r requirements.txt'
                 }
             }
         }
