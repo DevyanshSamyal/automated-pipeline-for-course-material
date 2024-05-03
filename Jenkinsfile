@@ -15,7 +15,6 @@ pipeline {
             steps {
                 script {
                   
-                    
                     // Install required python packages within the virtual environment
                     sh 'pip install -r requirements.txt'
                 }
